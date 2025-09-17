@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="./CSS/gallery.css">
+    <title>Photo Gallery</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <div class="gallery-box">
+            <div class="row">
+                <!-- Photo 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="gallery-item">
+                        <a href="./Images/GalleryImg.jpg" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-image="./Images/GalleryImg.jpg">
+                            <img src="./Images/GalleryImg.jpg" class="gallery-media" alt="Gallery Image 1">
+                        </a>
+                        <div class="socialIcon">
+                            <a href="https://www.instagram.com/yourusername" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="gallery-item">
+                        <a href="./Images/GalleryImg2.jpg" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-image="./Images/GalleryImg2.jpg">
+                            <img src="./Images/GalleryImg2.jpg" class="gallery-media" alt="Gallery Image 2">
+                        </a>
+                        <div class="socialIcon">
+                            <a href="https://www.instagram.com/yourusername" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="gallery-item">
+                        <a href="./Images/GalleryImg3.jpg" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-image="./Images/GalleryImg3.jpg">
+                            <img src="./Images/GalleryImg3.jpg" class="gallery-media" alt="Gallery Image 3">
+                        </a>
+                        <div class="socialIcon">
+                            <a href="https://www.instagram.com/yourusername" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="gallery-item">
+                        <a href="./Images/GalleryImg4.jpg" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-image="./Images/GalleryImg4.jpg">
+                            <img src="./Images/GalleryImg4.jpg" class="gallery-media" alt="Gallery Image 4">
+                        </a>
+                        <div class="socialIcon">
+                            <a href="https://www.tiktok.com/@yourusername" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="gallery-item">
+                        <a href="./Images/GalleryImg5.jpg" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-image="./Images/GalleryImg5.jpg">
+                            <img src="./Images/GalleryImg5.jpg" class="gallery-media" alt="Gallery Image 5">
+                        </a>
+                        <div class="socialIcon">
+                            <a href="https://www.instagram.com/yourusername" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <div class="gallery-item">
+                        <a href="./Images/GalleryImg6.jfif" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            data-bs-image="./Images/GalleryImg6.jfif">
+                            <img src="./Images/GalleryImg6.jfif" class="gallery-media" alt="Gallery Image 6">
+                        </a>
+                        <div class="socialIcon">
+                            <a href="https://www.instagram.com/yourusername" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered image-modal">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0 p-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img id="modalImage" src="" class="img-fluid" alt="Enlarged view">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Local/CDN JS -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script>
+        // Modal functionality
+        const imageModal = document.getElementById('imageModal');
+        if (imageModal) {
+            imageModal.addEventListener('show.bs.modal', function (event) {
+                const trigger = event.relatedTarget;
+                const imageUrl = trigger.getAttribute('data-bs-image');
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = imageUrl;
+            });
+        }
+    </script>
+</body>
+
+</html>

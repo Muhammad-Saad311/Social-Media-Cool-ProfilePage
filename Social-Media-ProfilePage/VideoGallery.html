@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Gallery CSS -->
+  <link rel="stylesheet" href="./CSS/gallery.css">
+  <title>Video Gallery</title>
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="gallery-box">
+      <div class="row">
+        <!-- Video 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item">
+            <a href="./Videos/GalleryVid.mp4" data-bs-toggle="modal" data-bs-target="#videoModal"
+              data-bs-video="./Videos/GalleryVid.mp4">
+              <video class="gallery-media" muted loop>
+                <source src="./Videos/GalleryVid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="socialIcon">
+              <a href="https://www.tiktok.com/@yourusername" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item">
+            <a href="./Videos/GalleryVid2.mp4" data-bs-toggle="modal" data-bs-target="#videoModal"
+              data-bs-video="./Videos/GalleryVid2.mp4">
+              <video class="gallery-media" muted loop>
+                <source src="./Videos/GalleryVid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="socialIcon">
+              <a href="https://www.instagram.com/@yourusername" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item">
+            <a href="./Videos/GalleryVid3.mp4" data-bs-toggle="modal" data-bs-target="#videoModal"
+              data-bs-video="./Videos/GalleryVid3.mp4">
+              <video class="gallery-media" muted loop>
+                <source src="./Videos/GalleryVid3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="socialIcon">
+              <a href="https://www.tiktok.com/@yourusername" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item">
+            <a href="./Videos/GalleryVid4.mp4" data-bs-toggle="modal" data-bs-target="#videoModal"
+              data-bs-video="./Videos/GalleryVid4.mp4">
+              <video class="gallery-media" muted loop>
+                <source src="./Videos/GalleryVid4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="socialIcon">
+              <a href="https://www.instagram.com/@yourusername" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item">
+            <a href="./Videos/GalleryVid5.mp4" data-bs-toggle="modal" data-bs-target="#videoModal"
+              data-bs-video="./Videos/GalleryVid5.mp4">
+              <video class="gallery-media" muted loop>
+                <source src="./Videos/GalleryVid5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="socialIcon">
+              <a href="https://www.instagram.com/@yourusername" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="gallery-item">
+            <a href="./Videos/GalleryVid6.mp4" data-bs-toggle="modal" data-bs-target="#videoModal"
+              data-bs-video="./Videos/GalleryVid6.mp4">
+              <video class="gallery-media" muted loop>
+                <source src="./Videos/GalleryVid6.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="socialIcon">
+              <a href="https://www.instagram.com/@yourusername" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered video-modal">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0 p-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-0">
+          <video id="modalVideo" controls class="w-100">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Local/CDN JS -->
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script>
+    // Video hover play functionality
+    const videos = document.querySelectorAll('.gallery-media');
+
+    videos.forEach(video => {
+      video.addEventListener('mouseenter', () => {
+        if (video.tagName === 'VIDEO') {
+          video.play();
+        }
+      });
+
+      video.addEventListener('mouseleave', () => {
+        if (video.tagName === 'VIDEO') {
+          video.pause();
+          video.currentTime = 0;
+        }
+      });
+
+      // Click to open modal
+      video.parentElement.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    });
+
+    // Modal functionality
+    const videoModal = document.getElementById('videoModal');
+    if (videoModal) {
+      videoModal.addEventListener('show.bs.modal', function (event) {
+        const trigger = event.relatedTarget;
+        const videoUrl = trigger.getAttribute('data-bs-video');
+        const modalVideo = document.getElementById('modalVideo');
+
+        // Clear previous source and add new one
+        while (modalVideo.firstChild) {
+          modalVideo.removeChild(modalVideo.firstChild);
+        }
+
+        const source = document.createElement('source');
+        source.src = videoUrl;
+        source.type = 'video/mp4';
+        modalVideo.appendChild(source);
+        modalVideo.load();
+      });
+
+      videoModal.addEventListener('hidden.bs.modal', function () {
+        const modalVideo = document.getElementById('modalVideo');
+        modalVideo.pause();
+        modalVideo.currentTime = 0;
+      });
+    }
+  </script>
+</body>
+
+</html>

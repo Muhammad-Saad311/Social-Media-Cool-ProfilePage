@@ -1,0 +1,340 @@
+html {
+  scroll-behavior: smooth;
+  transition: scroll-behavior 3s ease;
+}
+
+:root {
+  --color1: rgba(101, 217, 233, 0.86);
+  --color2: 8, 8, 8;
+  --color3: rgba(239, 241, 241, 0.86);
+}
+
+body {
+  background: radial-gradient(circle, var(--color1) 40%, rgb(var(--color2)) 60%);
+  color: #f3eded;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-custom {
+  background: linear-gradient(266deg, var(--color1) 0%, rgb(var(--color2)) 100%);
+}
+
+.navbar-brand {
+  font-family: 'Colonna MT', sans-serif;
+  font-size: 3rem;
+  color: var(--color1) !important;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  color: var(--color1) !important;
+}
+
+.dropdown-menu {
+  background-color: var(--color1);
+}
+/* Intro Section Styles */
+.intro-section {
+  background-color: black;
+  border-radius: 20px;
+}
+
+.intro-heading {
+  color: var(--color1);
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.intro-text {
+  color: var(--color3);
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.about-btn {
+  background: var(--color1);
+  color: black;
+  border: 2px solid var(--color1);
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.about-btn:hover {
+  background-color: black;
+  color: var(--color1);
+}
+/* Proflile Section Styles */
+.profile-section {
+  background-color: rgba(var(--color2), 0.678);
+  border-radius: 20px;
+  color: var(--color3);
+}
+
+.profile-fieldset {
+  border: 5px solid var(--color1);
+  background-color: #050505;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.profile-pic {
+  height: 340px;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid var(--color1);
+}
+
+.profile-details-card {
+  border: 2px solid var(--color1);
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+}
+
+.details-list {
+  line-height: 2;
+}
+
+.stats-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(66, 66, 64, 0.699);
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 10px;
+  height: 100%;
+}
+
+.stats-number {
+  font-size: 28px;
+  color: var(--color1);
+}
+
+.hobby-card {
+  background-color: rgba(66, 66, 64, 0.699);
+  border-radius: 20px;
+}
+
+.hobby-card-img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hobby-title {
+  color: var(--color1);
+  font-weight: 600;
+}
+/* Gallery-main Section Styles */
+.gallery-section {
+  background: linear-gradient(to top, var(--color1) 0%, rgb(var(--color2)) 100%);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.gallery-heading {
+  color: var(--color1);
+  text-shadow: 3px 3px 2px black;
+}
+
+.gallery-nav {
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+
+.gallery-btn {
+  padding: 10px 10px;
+  background-color: #020202;
+  color: rgb(156, 232, 245);
+  border-radius: 5px;
+  border: 1px solid var(--color1);
+  margin: 0 10px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.gallery-btn:hover,
+.gallery-btn:active {
+  background-color: var(--color1);
+  color: #050505;
+  transform: scale(1.05);
+}
+
+.gallery-iframe {
+  border-radius: 10px;
+  width: 100%;
+  min-height: 1000px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.gallery-iframe:hover {
+  transform: scale(1.01);
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background: linear-gradient(to bottom, var(--color1) 0%, rgb(var(--color2)) 100%);
+  padding: 3rem 0;
+  border-radius: 15px;
+}
+
+.contact-heading {
+  color: var(--color1);
+  text-shadow: 3px 3px 2px black;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  background-color: rgba(var(--color2), 0.8);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid var(--color1);
+}
+
+.contact-info {
+  color: var(--color3);
+}
+
+.contact-icon {
+  color: var(--color1);
+  font-size: 1.5rem;
+  margin-right: 15px;
+  width: 30px;
+  text-align: center;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--color1);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--color1);
+}
+
+.social-btn:hover {
+  background: black;
+  text-decoration: none;
+  color: var(--color1);
+  transform: scale(1.1);
+}
+
+.contact-form .form-control {
+  background-color: rgba(66, 66, 64, 0.8);
+  border: 1px solid var(--color1);
+  color: var(--color3);
+  padding: 12px 15px;
+}
+
+.contact-form .form-control:focus {
+  background-color: rgba(66, 66, 64, 0.9);
+  border-color: var(--color1);
+  box-shadow: 0 0 0 0.25rem rgba(101, 217, 233, 0.25);
+  color: var(--color3);
+}
+
+.contact-form .form-label {
+  color: var(--color1);
+  font-weight: 600;
+}
+
+.submit-btn {
+  background: var(--color1);
+  color: black;
+  border: 2px solid var(--color1);
+  font-weight: 700;
+  padding: 12px 30px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: black;
+  color: var(--color1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px !important;
+  }
+
+  .profile-details-card {
+    margin-top: 20px;
+  }
+
+  .hobby-card {
+    height: 280px;
+  }
+
+  .gallery-iframe {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .intro-heading {
+    font-size: 1.7rem;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hobby-card{
+    height: 360px;
+    line-height: 1;
+  }
+
+  .gallery-iframe {
+    min-height: 300px;
+  }
+}

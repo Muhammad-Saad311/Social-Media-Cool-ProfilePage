@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Saad</title>
+  <!-- 1) CDN links -->
+  <!-- i.Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+  <!-- ii.Bootstrap JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
+  <!-- Bootstrap CSS -->
+  <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <!-- Header-Navigation -->
+  <header class="navbar navbar-expand-lg navbar-light navbar-custom py-4 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Muhammad Saad</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#intro">Intro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sites
+            </a>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Site 1</a></li>
+              <li><a class="dropdown-item" href="#">Site 2</a></li>
+              <li><a class="dropdown-item" href="#">Site 3</a></li>
+              <li><a class="dropdown-item" href="#">Site 4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Intro Section -->
+  <section id="intro" class="intro py-5">
+    <div class="container">
+      <div class="row intro-section p-3">
+        <h2 class="intro-heading mb-4">Welcome to my Profile Site!</h2>
+        <p class="intro-text">
+          I'm a social media content creator with a passion for making people smile. My journey started with a
+          simple idea: to share joy and creativity through short videos. Over the years, I've built a community of
+          over 1.5 million followers who inspire me every day. In this site, you'll find my latest projects,
+          galleries, and a glimpse into my life as a content creator. Join me on this exciting journey! You can get
+          early access to my latest content by following to my site.
+        </p>
+        <a href="#profile">
+          <button class="about-btn btn mt-3">About Me</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Profile Section -->
+  <section id="profile" class="profile py-5">
+    <div class="container">
+      <div class="profile-section p-3">
+        <div class="profile-fieldset">
+          <h2 class="text-center mb-4 gallery-heading">Profile</h2>
+          <p class="text-center">Here's a bit more about me:</p>
+          <div class="row align-items-center mt-5">
+            <div class="col-lg-4 col-md-12 text-center">
+              <a href="./Images/MyImage1.jpeg">
+                <img src="./Images/MyImage1.jpeg" alt="Umair's Profile Picture" class="profile-pic img-fluid">
+              </a>
+            </div>
+            <div class="col-lg-8 col-md-12 mt-5">
+              <div class="profile-details-card d-flex flex-column flex-md-row justify-content-between">
+                <ul class="details-list list-unstyled mx-1">
+                  <li><strong>Full Name:</strong> Muhammad Saad</li>
+                  <li><strong>Age:</strong> 17</li>
+                  <li><strong>Gender:</strong> Male</li>
+                  <li><strong>Nationality:</strong> Pakistan</li>
+                  <li><strong>Profession:</strong> Social Media Influencer</li>
+                </ul>
+
+                <div class="row mt-4 mt-md-0 ms-md-3 details-grid">
+                  <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="stats-box">
+                      <span class="stats-number">10+</span>
+                      <small class="text-center">Years of Experience</small>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="stats-box">
+                      <span class="stats-number">1.5M+</span>
+                      <small class="text-center">Followers</small>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="stats-box">
+                      <span class="stats-number">2+</span>
+                      <small class="text-center">Awards Won</small>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="stats-box">
+                      <span class="stats-number">5+</span>
+                      <small class="text-center">Social Welfare Projects Completed</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-center my-5" style="color: var(--color1);">My Hobbies</h3>
+          <!-- Hobby Cards -->
+          <div class="row text-center flex-column flex-lg-row p-4 justify-content-between align-items-center">
+            <!-- Hobby 1 -->
+            <card class="col-lg-4 col-sm-12 p-0 mb-3 card hobby-card">
+              <img src="./Images/cardimg1.jpg" class="card-img-top hobby-card-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title hobby-title">Car Drifting</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’ s content.</p>
+              </div>
+            </card>
+
+            <card class="col-lg-3 col-sm-12 p-0 mb-3 card hobby-card">
+              <img src="./Images/cardimg2.jpg" class="card-img-top hobby-card-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title hobby-title">Traveling</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’ s content.</p>
+              </div>
+            </card>
+
+            <card class="col-lg-4 col-sm-12 p-0 mb-3 card hobby-card">
+              <img src="./Images/cardimg3.jpg" class="card-img-top hobby-card-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title hobby-title">Hunting and Sniping</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’ scontent.</p>
+              </div>
+            </card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery py-5">
+    <div class="container">
+      <div class="gallery-section">
+        <h2 class="text-center mb-3 gallery-heading">Gallery</h2>
+        <p class="text-center">Check out some of my favorite collections!</p>
+        <div class="d-flex flex-column align-items-center mt-4">
+          <div class="gallery-nav mb-4">
+            <button onclick="changeIframeSrc('./VideoGallery.html')" class="gallery-btn">Videos</button>
+            <button onclick="changeIframeSrc('./PhotoGallery.html')" class="gallery-btn">Photos</button>
+          </div>
+          <iframe src="./VideoGallery.html" frameborder="0" class="gallery-iframe" id="contentframe"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container-fluid">
+      <h2 class="text-center contact-heading">Get In Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="contact-card">
+            <div class="row">
+              <div class="col-md-5 contact-info">
+                <h3 class="text-center mb-4" style="color: var(--color1);">Contact Information</h3>
+
+                <div class="contact-detail">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h5 style="color: var(--color1);">Email</h5>
+                    <p>muhammadsaad5608@gmail.com</p>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div>
+                    <h5 style="color: var(--color1);">Phone</h5>
+                    <p>+92 3215156548</p>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h5 style="color: var(--color1);">Location</h5>
+                    <p>Pakistan</p>
+                  </div>
+                </div>
+                <div class="social-buttons mb-5">
+                  <a href="https://instagram.com" class="social-btn" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://tiktok.com" class="social-btn" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                  </a>
+                  <a href="https://youtube.com" class="social-btn" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://twitter.com" class="social-btn" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <h3 class="text-center mb-4" style="color: var(--color1);">Send Me a Message</h3>
+                <form class="contact-form">
+                  <div class="form-group mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="submit-btn btn">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid">
+      <div class="row px-2">
+        <span style="color: var(--color1);">Designed By Sk Develop</span>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap Local/CDN JS -->
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
+  <script>
+    function changeIframeSrc(url) {
+      document.getElementById('contentframe').src = url;
+
+      // Update active button state
+      const buttons = document.querySelectorAll('.gallery-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      event.target.classList.add('active');
+    }
+    // Initialize the video hover play functionality for video gallery
+    document.addEventListener('DOMContentLoaded', function () {
+      const contentframe = document.getElementById('contentframe');
+
+      contentframe.onload = function () {
+        const iframeDoc = contentframe.contentDocument || contentframe.contentWindow.document;
+        const videos = iframeDoc.querySelectorAll('.hover-video');
+
+        videos.forEach(video => {
+          video.addEventListener('mouseenter', () => {
+            video.play();
+          });
+          video.addEventListener('mouseleave', () => {
+            video.pause();
+          });
+        });
+      };
+      // Contact form submission
+      const contactForm = document.querySelector('.contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          alert('Thank you for your message! I will get back to you soon.');
+          contactForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
